@@ -1,0 +1,44 @@
+let rec id x = x
+
+let rec const x = 
+    let rec f y = x in f
+
+let v = (const (id 3)) (1 + 2 * 3)
+
+let x = 3
+let y = 5
+
+let rec fact n  = 
+    if n = 0 then 1
+             else n * fact (n-1)
+
+let rec succ x = x + 1
+
+type 'a list = Cons of 'a * 'a list
+             | Nil
+
+type int_tree = Node of int_tree * int_tree
+              | Leaf of int
+
+type sex = Man | Woman
+
+let l = Leaf 5
+let n = Node l (Leaf 5)
+
+let rec main = 
+    succ 5
+
+
+
+
+
+
+
+let rec const x = 
+    let rec f y = x in f
+and id x = x
+
+type 'a list = Nil | Cons of 'a * 'a list
+
+let x = match y with
+    | ( (T 1 2 3), D (E a) (F b c), () ) -> f

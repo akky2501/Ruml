@@ -1,0 +1,8 @@
+[package]
+name = "Ruml"
+version = "0.1.0"
+authors = ["aki"]
+
+[dependencies]
+lazy_static = "0.2.8"
+pom = "1.0.1"

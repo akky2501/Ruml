@@ -1,0 +1,21 @@
+[[package]]
+name = "Ruml"
+version = "0.1.0"
+dependencies = [
+ "lazy_static 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pom 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "lazy_static"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "pom"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum lazy_static 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)" = "3b37545ab726dd833ec6420aaba8231c5b320814b9029ad585555d2a03e94fbf"
+"checksum pom 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "8678ba1b3c8f2afef0fbfeb21c1c9dd44165d11923ecaec02925122fabdf4e69"

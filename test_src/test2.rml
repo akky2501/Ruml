@@ -1,0 +1,32 @@
+let rec print x = ()
+
+let rec make_pair x =
+    let rec f y = (x, y) in f
+
+let f = make_pair 42
+let a = f true
+let b = f 1
+
+let po = 
+    print a;
+    print b;
+    ()
+
+let rec fact n =
+    if n = 0 then 1 else n * fact (n-1)
+
+let result = print (fact 5)
+
+type 'a 'b pair = Make of 'a * 'b
+                | Nil
+
+let x = print (Make 1 true)
+let x = print (Make false 0)
+let x = print (Make (fact 5) Nil )
+
+type week = Sun | Mon | Tue | Wed |Ths | Fri | Sat
+
+let x = print Sun
+
+let x = (print 1; false) && (print 2; true)
+let x = (print 1; true) || (print 2; false)

@@ -1,0 +1,23 @@
+
+type 'a list = Nil | Cons of 'a * 'a list
+type 'a 'b pair = Make of 'a * 'b
+
+let x = match Cons true Nil with 
+        | Cons x y -> x
+        | Nil -> false
+
+
+let y = if true then Cons 1 Nil else Nil
+
+let z = Make 2 (Cons 42 Nil)
+
+
+let rec fact n =
+    if n = 0 then 1
+             else n * fact (n-1)
+
+let rec id x = x
+
+
+
+
